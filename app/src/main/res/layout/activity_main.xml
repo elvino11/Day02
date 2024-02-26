@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="@string/perhitungan_balok_sederhana"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--JELASKAN TENTANG SP DAN DP
+    APA PERBEDAANNYA
+    SIAPA YG TAU-->
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_marginTop="32dp"
+        android:hint="@string/height"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etWidth"
+        android:layout_marginTop="16dp"
+        android:hint="@string/width"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etLength"
+        android:layout_marginTop="16dp"
+        android:hint="@string/length"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnVolume"
+        android:text="@string/volume"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#BC663F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSurfaceArea"
+        android:text="@string/surface_area"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#AE3CA1AA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnCircumference"
+        android:text="@string/circumference"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#B841EA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:text="@string/result"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
