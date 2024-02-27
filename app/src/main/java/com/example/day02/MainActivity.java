@@ -14,6 +14,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Deklarasi
+    private EditText etLength, etWidth, etHeight;
+
+    private Button btnVolume, btnSurfaceArea, btnCircumference ;
+
+    private TextView tvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,25 +32,24 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        EditText etHeight = findViewById(R.id.etHeight);
-        EditText etWidth = findViewById(R.id.etWidth);
-        EditText etLength = findViewById(R.id.etLength);
+        etLength = findViewById(R.id.etLength);
+        etWidth = findViewById(R.id.etWidth);
+        etHeight = findViewById(R.id.etHeight);
 
-        TextView tvResult = findViewById(R.id.tvResult);
+        btnVolume = findViewById(R.id.btnVolume);
 
-        Button btnVolume = findViewById(R.id.btnVolume);
+        btnSurfaceArea = findViewById(R.id.btnSurfaceArea);
 
-        Button btnSurfaceArea = findViewById(R.id.btnSurfaceArea);
+        btnCircumference = findViewById(R.id.btnCircumference);
 
-        Button btnCircumference = findViewById(R.id.btnCircumference);
+        tvResult = findViewById(R.id.tvResult);
 
         btnVolume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String inputHeight = etHeight.getText().toString();
-                int height = Integer.parseInt(inputHeight);
-                int width = Integer.parseInt(etWidth.getText().toString());
                 int length = Integer.parseInt(etLength.getText().toString());
+                int width = Integer.parseInt(etWidth.getText().toString());
+                int height = Integer.parseInt(etHeight.getText().toString());
 
                 int volume = length * width * height;
 
@@ -101,5 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 }
